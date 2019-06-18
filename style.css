@@ -1,72 +1,54 @@
 * {
-    box-sizing: border-box;
-    margin: 0%;
-    padding: 0%;
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
 }
 
 html body {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    position: relative;
-
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  position: relative;
+  height: 100vh;
+  width: 100%;
 }
 
 .game h1 {
-    font-weight: lighter;
-    text-align: center;
-    padding: 20px 10px;
-    width: 100%;
-    background-color: green;
-}
-
-.game h2 {
-    text-align: center;
-    font-weight: lighter;
-    margin: 50px;
+  font-weight: lighter;
+  text-align: center;
+  padding: 20px 10px;
+  width: 100%;
+  background-color: green;
 }
 
 .board {
-    height: 400px;
-    width: 400px;
-    margin: 50px auto;
-    background-color: black;
-    color: #fff;
-    display: flex;
+  width: 306px;
+  background: #f0f0f0;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 100px);
+  grid-gap: 3px;
+  display: grid;
+  border: 1px solid black;
+  cursor: pointer;
+  margin: 50px auto;
 }
 
-td {
-    width: 100px;
-    height: 100px;
-    cursor: pointer;
-    text-align: center;
-    font-size: 2rem;
+.box {
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: #222;
 }
 
-table {
-    margin: 50px auto;
+.box:hover {
+  background-color: grey;
+  opacity: 0.6;
 }
 
-.vert {
-    border-left: 2px solid black;
-    border-right: 2px solid black;
-}
-
-.hori {
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-}
-
-.circle {
-    height: 90px;
-    width: 90px;
-    margin: 5px;
-    border: 1px solid black;
-    border-radius: 50%;
-    display: none;
-}
-
-.exit {
-    font-size: 4.5rem;
-    font-weight: lighter;
-    display: none;
+footer {
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  background-color: grey;
 }

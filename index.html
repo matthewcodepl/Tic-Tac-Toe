@@ -1,59 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap"
+      rel="stylesheet"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Tic-tac-toe</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="game">
-        <h1>
-            Play the Tic-Tac-Toe game!
-        </h1>
-        <h2>Play 1 vs 1</h2>
-        <table>
-            <tr>
-                <td id="one">
-
-                </td>
-                <td id="two" class="vert">
-
-                </td>
-                <td id="three">
-
-                </td>
-            </tr>
-            <tr>
-                <td id="four" class="hori">
-
-                </td>
-                <td id="five" class="vert hori">
-
-                </td>
-                <td id="six" class="hori">
-
-                </td>
-            </tr>
-            <tr>
-                <td id="seven">
-
-                </td>
-                <td id="eight" class="vert">
-                </td>
-
-                <td id="nine">
-                </td>
-            </tr>
-        </table>
-        <div class="circle"></div>
-        <h3 class="exit">X</h3>
+      <h1>
+        Play the Tic-Tac-Toe game!
+      </h1>
+      <div class="board">
+        <div class="box fa" data-row="0" data-column="0"></div>
+        <div class="box fa" data-row="0" data-column="1"></div>
+        <div class="box fa" data-row="0" data-column="2"></div>
+        <div class="box fa" data-row="1" data-column="0"></div>
+        <div class="box fa" data-row="1" data-column="1"></div>
+        <div class="box fa" data-row="1" data-column="2"></div>
+        <div class="box fa" data-row="2" data-column="0"></div>
+        <div class="box fa" data-row="2" data-column="1"></div>
+        <div class="box fa" data-row="2" data-column="2"></div>
+      </div>
     </header>
+    <footer>
+      Inspired by overment(YOUTUBE)
+    </footer>
     <script src="main.js"></script>
-</body>
-
+  </body>
 </html>
